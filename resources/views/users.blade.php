@@ -11,7 +11,6 @@
 
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
-        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.0.3/css/buttons.dataTables.min.css">
         </style>
     </head>
     <body class="antialiased">
@@ -36,9 +35,9 @@
 
 
     <!-- jQuery -->
-    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//code.jquery.com/jquery-3.5.1.js"></script>
     <!-- DataTables -->
-    <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- App scripts -->
@@ -62,7 +61,6 @@
                         { "data": "active" , searchable: false},
                         { "data": "options", orderable: false, searchable: false }
                     ]
-
                 });
 
                 $('#users').on('click', '.btn-delete[data-remote]', function (e) {

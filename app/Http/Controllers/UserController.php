@@ -106,7 +106,8 @@ class UserController extends Controller
                 $nestedData['email'] =  $user->email;
 //                    substr(strip_tags($user->body),0,50)."...";
                 $nestedData['created_at'] = date('j M Y h:i a',strtotime($user->created_at));
-                $nestedData['active'] = $user->getActive();
+//                $nestedData['active'] = $user->getActive();
+                $nestedData['active'] = $user->active;
                 $nestedData['options'] = "
 <a href='users/{$id}/edit' class='edit btn btn-primary' title='EDIT' >
 <i class='glyphicon glyphicon-user'></i> EDIT</a>

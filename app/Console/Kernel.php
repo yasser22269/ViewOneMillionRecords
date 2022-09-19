@@ -2,8 +2,11 @@
 
 namespace App\Console;
 
+use App\Jobs\dialy;
+use App\Jobs\dialyActive;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\Support\Facades\DB;
 
 class Kernel extends ConsoleKernel
 {
@@ -13,9 +16,16 @@ class Kernel extends ConsoleKernel
      * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
      * @return void
      */
+
+
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
+
+      //  $schedule->command('day:jobs')->everyMinute();
+//        $schedule->job(new dialy)->everyMinute();
+//        $schedule->job(new dialyActive)->everyMinute();
+
     }
 
     /**
